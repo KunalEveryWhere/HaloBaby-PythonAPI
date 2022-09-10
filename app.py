@@ -29,7 +29,7 @@ def Save_MFCC(Signal,Sr,n_mfcc=13,n_fft=2048,hop_length=512):
 def index():
     return 'This is the ML Python API for HaloBaby Project, under TTRI. \n edst. 2022 Team HaloBaby \n\nKindly check [/routes] for all route description'
 
-@app.route('/routes', methods=['GET'])
+@app.route('/routes')
 def index():
     return '/ -> GET -> General Desciption of this API \n/routes -> GET -> All available routes and their description\n/emotionPredict -> POST -> Takes in an array of ECG Data, and returns the predicted emotional state\n/cryPredict -> POST -> Takes in an array of Mic Data, and returns the predicted reason of cry-state'
 
